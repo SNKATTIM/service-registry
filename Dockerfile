@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8090
-ADD target/*.jar app.jar
-ENTRYPOINT ["java", "-jar","/app.jar"]
+ADD target/*.jar service.jar
+ENTRYPOINT ["java", "-jar","/service.jar"]
